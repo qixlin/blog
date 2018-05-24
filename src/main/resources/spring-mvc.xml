@@ -75,5 +75,6 @@
         <property name="exposeSessionAttributes" value="true" />
         <property name="requestContextAttribute" value="request" />
     </bean>
-
+    <mvc:resources mapping="/cho/**" location="/cho/"/>
+    <mvc:resources mapping="/static/**" location="/static/"/>
 </beans>
