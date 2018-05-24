@@ -76,4 +76,5 @@
         <property name="requestContextAttribute" value="request" />
     </bean>
 
+    <mvc:resources mapping="/cho/**" location="/cho/"/>
 </beans>
