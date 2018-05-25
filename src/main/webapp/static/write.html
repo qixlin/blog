@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Bootstrap 模板</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!-- 引入 Bootstrap -->
+    <link href="/static/boot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="boot.css" rel="stylesheet">
+
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">It's Redos.</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">数据总览</a></li>
+                <li class="active"><a href="write.html">发内容</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        内容管理 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">文章管理</a></li>
+                        <li><a href="#">分类管理</a></li>
+                        <li><a href="#">标签管理</a></li>
+                        <li><a href="#">评论管理</a></li>
+                        <li class="divider"/>
+                        <li><a href="#">附件管理</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">网站设置</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right hidden-xs">
+                <li><img src="download.png" style="margin-top: 5px" width="40px" height="40px" class="img-circle"/></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b class="caret"></b> </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="#">个人信息</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="wrap" style="padding: 15px">
+
+
+
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="col-sm-1 col-xs-2 control-label text-right">标题</label>
+            <div class="col-sm-4 col-xs-10">
+                <input type="password" class="form-control" id="title" placeholder="请输入标题">
+            </div>
+            <div>
+
+                <label for="lastname" class="col-sm-1 col-xs-2 control-label  text-right">地址</label>
+
+                <div class="col-sm-4 col-xs-10 input-group" id="lastname">
+                    <span class="input-group-addon text-muted"><b>http://redos.io/</b></span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+    </form>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="content" class="col-sm-1 col-xs-2 control-label  text-right">密码</label>
+            <div class="col-sm-9 col-xs-10">
+                <textarea id="content" class="form-control" rows="13"></textarea>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="/cho/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="/static/boot/js/bootstrap.min.js"></script>
+
+</body>
+</html>
